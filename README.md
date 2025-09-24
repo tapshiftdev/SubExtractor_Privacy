@@ -1,6 +1,6 @@
 # SubExtractor Privacy Policy
 
-This repository hosts the privacy policy for the SubExtractor Chrome Extension.
+This repository hosts the privacy policy for the SubExtractor Chrome & Safari (IOS & MacOS) Extension.
 
 ## 🔗 Live Privacy Policy
 
@@ -28,4 +28,4 @@ This policy is maintained to reflect current practices and legal requirements. L
 
 ---
 
-© 2024 TapShiftDev. All rights reserved.
+© 2025 TapShiftDev. All rights reserved.
