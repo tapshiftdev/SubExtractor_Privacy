@@ -1,337 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SubExtractor - Privacy Policy</title>
-    <style>
-        :root {
-            --primary-color: #6aa8ff;
-            --secondary-color: #3c87ff;
-            --text-color: #0c1633;
-            --text-muted: #64748b;
-            --bg-color: #ffffff;
-            --border-color: #e2e8f0;
-            --section-bg: #f8fafc;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Inter", "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding: 2rem 0;
-            border-bottom: 2px solid var(--border-color);
-        }
-
-        .logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .logo img {
-            width: 48px;
-            height: 48px;
-            border-radius: 12px;
-        }
-
-        .logo-text {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-        }
-
-        .last-updated {
-            background: var(--section-bg);
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary-color);
-            margin-bottom: 2rem;
-        }
-
-        .section {
-            background: var(--section-bg);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 12px;
-            border: 1px solid var(--border-color);
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--primary-color);
-        }
-
-        h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin: 1.5rem 0 0.75rem 0;
-            color: var(--text-color);
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-color);
-        }
-
-        ul {
-            margin: 1rem 0;
-            padding-left: 2rem;
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            color: var(--text-color);
-        }
-
-        .highlight {
-            background: linear-gradient(135deg, var(--primary-color)15, var(--secondary-color)15);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary-color);
-            margin: 1.5rem 0;
-        }
-
-        .highlight strong {
-            color: var(--primary-color);
-        }
-
-        .contact-info {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            border: 2px solid var(--primary-color);
-            text-align: center;
-        }
-
-        .contact-link {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            text-decoration: none;
-            padding: 0.75rem 2rem;
-            border-radius: 8px;
-            font-weight: 600;
-            margin-top: 1rem;
-            transition: transform 0.2s ease;
-        }
-
-        .contact-link:hover {
-            transform: translateY(-2px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            margin-top: 3rem;
-            border-top: 2px solid var(--border-color);
-            color: var(--text-muted);
-        }
-
-        .company-logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        .company-logo img {
-            width: 24px;
-            height: 24px;
-            border-radius: 4px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            .section {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SubExtractor · Privacy Policy</title>
+  <meta name="description" content="SubExtractor processes captions locally on your device. We do not collect personal data." />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#f6f8fc; --bg-accent:#eef2f8; --panel:rgba(255,255,255,0.65);
+      --ink:#0c1633; --muted:#667085; --hair:rgba(12,22,51,0.08);
+      --brand-1:#0E4884; --brand-2:#6AA8FF;
+      --chip:rgba(14,72,132,0.06); --chip-border:rgba(14,72,132,0.12);
+      --r-lg:20px; --r-md:14px; --blur:18px; --shadow:0 10px 30px rgba(14,72,132,0.12);
+    }
+    @media(prefers-color-scheme:dark){
+      :root{
+        --bg:#0a0f1d; --bg-accent:#0d1426; --panel:rgba(13,20,38,0.55);
+        --ink:#e9edf7; --muted:#a2acc3; --hair:rgba(233,237,247,0.08);
+        --chip:rgba(106,168,255,0.10); --chip-border:rgba(106,168,255,0.22);
+        --shadow:0 10px 30px rgba(0,0,0,0.35);
+      }
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:ui-sans-serif,system-ui,-apple-system,"SF Pro Text","Segoe UI",Roboto,"Inter",sans-serif;
+      line-height:1.6;color:var(--ink);background:var(--bg);
+      background:radial-gradient(1200px 600px at 15% -10%,rgba(106,168,255,0.20),transparent 60%),
+                 radial-gradient(900px 500px at 100% 0%,rgba(14,72,132,0.16),transparent 55%),
+                 var(--bg);
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:880px;margin:0 auto;padding:48px 24px 80px}
+    header{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;margin-bottom:40px}
+    .brand{display:flex;align-items:center;gap:12px;padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--chip-border)}
+    .brand-mark{display:grid;place-items:center;width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,var(--brand-1),var(--brand-2))}
+    .brand-mark svg{width:16px;height:16px;fill:white}
+    .brand-name{font-weight:700}
+    h1{
+      font-size:clamp(28px,5vw,40px);
+      background:linear-gradient(135deg,var(--brand-2),var(--brand-1));
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+      font-weight:800;margin:6px 0
+    }
+    .subtitle{color:var(--muted);font-size:15px}
+    .panel{
+      background:var(--panel);border:1px solid var(--hair);
+      border-radius:20px;backdrop-filter:blur(var(--blur));box-shadow:var(--shadow);
+      padding:24px
+    }
+    nav.toc{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 20px;justify-content:center}
+    nav.toc a{
+      text-decoration:none;color:var(--ink);font-weight:600;font-size:14px;
+      padding:10px 14px;border-radius:10px;background:var(--chip);
+      border:1px solid var(--chip-border);transition:transform .15s ease
+    }
+    nav.toc a:hover{transform:translateY(-1px)}
+    section{margin-top:32px}
+    .section-card{margin-top:12px;padding:24px;border-radius:14px;border:1px solid var(--hair);background:var(--panel);backdrop-filter:blur(var(--blur))}
+    h2{font-size:22px;margin:0 0 6px}
+    h3{font-size:16px;margin:18px 0 10px}
+    p{margin:10px 0}ul{margin:8px 0 0 18px}li{margin:6px 0}
+    .callout{
+      margin-top:24px;padding:16px 18px;border-radius:14px;
+      border:1px solid var(--chip-border);
+      background:linear-gradient(135deg,rgba(106,168,255,0.12),rgba(14,72,132,0.10))
+    }
+    .callout strong{background:linear-gradient(135deg,var(--brand-2),var(--brand-1));-webkit-background-clip:text;background-clip:text;color:transparent}
+    footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--hair);color:var(--muted);text-align:center;font-size:14px}
+    .credit{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:8px;padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--chip-border)}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <div class="logo-text">SubExtractor</div>
-            </div>
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">Your privacy is our priority</p>
-        </header>
+  <div class="wrap">
+    <header class="panel">
+      <div class="brand" aria-label="SubExtractor">
+        <span class="brand-mark"><svg viewBox="0 0 24 24"><path d="M8 7h8a1 1 0 0 1 0 2H8a1 1 0 0 1 0-2zm-2 4h12a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2zm3 4h6a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2z"/></svg></span>
+        <strong class="brand-name">SubExtractor</strong>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">Minimal permissions. On-device processing. No tracking.</p>
+      <nav class="toc">
+        <a href="#overview">Overview</a>
+        <a href="#data">Data</a>
+        <a href="#how">How it works</a>
+        <a href="#third">Third-party</a>
+        <a href="#storage">Storage</a>
+        <a href="#security">Security</a>
+        <a href="#rights">User Rights</a>
+        <a href="#updates">Updates</a>
+      </nav>
+      <div class="callout"><strong>TL;DR:</strong> We don’t collect personal data. SubExtractor processes captions locally and never sends information to us.</div>
+    </header>
 
-        <div class="last-updated">
-            <strong>Last Updated:</strong> September 19, 2024 | <strong>Version:</strong> 2.0.0
-        </div>
+    <main>
+      <section id="overview"><div class="section-card"><h2>📋 Overview</h2><p>SubExtractor is a Chrome & Safari (iOS & macOS) extension by TapShiftDev that helps you extract and view captions. This policy explains how your information is handled.</p></div></section>
+      <section id="data"><div class="section-card"><h2>🔒 Data Collection</h2><h3>We do <em>not</em> collect</h3><ul><li>Personal info</li><li>Browsing history</li><li>Video content</li><li>Usage analytics</li><li>Location data</li><li>Device fingerprints</li></ul><h3>We process locally</h3><ul><li>Caption text</li><li>Temporary cache</li><li>User preferences</li></ul></div></section>
+      <section id="how"><div class="section-card"><h2>🖥️ How It Works</h2><ul><li>Accesses captions on supported platforms</li><li>Processes data locally</li><li>Temporary local cache</li><li>Automatic cleanup</li><li>No server transmission</li></ul></div></section>
+      <section id="third"><div class="section-card"><h2>🌐 Third-Party Services</h2><p>SubExtractor interacts only to retrieve caption files or minimal metadata. These are governed by the platform’s privacy policies.</p></div></section>
+      <section id="storage"><div class="section-card"><h2>💾 Data Storage</h2><ul><li>Local only</li><li>Automatic cleanup</li><li>No cloud uploads</li><li>Uninstall clears data</li></ul></div></section>
+      <section id="security"><div class="section-card"><h2>🔐 Security</h2><ul><li>Strict CSP</li><li>Minimal permissions</li><li>No external scripts</li><li>Regular updates</li></ul></div></section>
+      <section id="rights"><div class="section-card"><h2>👤 User Rights</h2><p>No personal data means traditional data rights don’t apply. You maintain full control locally and can uninstall at any time.</p></div></section>
+      <section id="updates"><div class="section-card"><h2>🔄 Updates</h2><p>This policy may change; any updates will appear here. Continued use indicates acceptance.</p></div></section>
+    </main>
 
-        <div class="highlight">
-            <strong>TL;DR: We don't collect any data from you. Period.</strong><br>
-            SubExtractor processes captions locally on your device and never transmits your personal information anywhere.
-        </div>
-
-        <div class="section">
-            <h2>📋 Overview</h2>
-            <p>
-                SubExtractor is a Chrome & Safari (IOS & Mac) extension developed by TapShiftDev that helps users extract and view captions
-                from online videos. This privacy policy explains how we handle your information when you use our extension.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>🔒 Data Collection</h2>
-            <h3>What We DON'T Collect:</h3>
-            <ul>
-                <li><strong>Personal Information:</strong> We don't collect names, emails, or any identifying information</li>
-                <li><strong>Browsing History:</strong> We don't track what websites you visit</li>
-                <li><strong>Video Content:</strong> We don't store or analyze the videos you watch</li>
-                <li><strong>Usage Analytics:</strong> We don't use analytics tools to track your behavior</li>
-                <li><strong>Location Data:</strong> We don't access or store your location</li>
-                <li><strong>Device Information:</strong> We don't collect device fingerprints or system details</li>
-            </ul>
-
-            <h3>What We DO Process (Locally Only):</h3>
-            <ul>
-                <li><strong>Caption Text:</strong> Processed locally on your device to display in the extension</li>
-                <li><strong>Temporary Storage:</strong> Captions are temporarily stored in your browser's local storage for performance</li>
-                <li><strong>User Preferences:</strong> Theme settings and display preferences stored locally</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>🖥️ How SubExtractor Works</h2>
-            <p>
-                SubExtractor operates entirely within your browser:
-            </p>
-            <ul>
-                <li>Accesses publicly available caption data from supported video platforms</li>
-                <li>Processes caption information locally on your device</li>
-                <li>Stores processed captions temporarily in your browser's local storage</li>
-                <li>Automatically cleans up stored data to prevent memory issues</li>
-                <li>Never transmits any data to external servers</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>🌐 Third-Party Services</h2>
-            <p>
-                SubExtractor interacts with video platforms (YouTube, Dailymotion, JW.org) only to:
-            </p>
-            <ul>
-                <li>Access publicly available caption/subtitle files</li>
-                <li>Retrieve video metadata necessary for caption synchronization</li>
-            </ul>
-            <p>
-                These interactions are governed by the respective platforms' privacy policies.
-                SubExtractor does not share any information with these platforms beyond what's
-                necessary for basic functionality.
-            </p>
-        </div>
-
-        <div class="section">
-            <h2>💾 Data Storage</h2>
-            <p>
-                All data processing and storage occurs locally:
-            </p>
-            <ul>
-                <li><strong>Local Storage:</strong> Captions and preferences stored in Chrome's local storage</li>
-                <li><strong>Automatic Cleanup:</strong> Old caption data is automatically removed</li>
-                <li><strong>No Cloud Storage:</strong> No data is uploaded to any cloud services</li>
-                <li><strong>User Control:</strong> You can clear all stored data by uninstalling the extension</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>🔐 Security</h2>
-            <p>
-                We implement security best practices:
-            </p>
-            <ul>
-                <li>Content Security Policy (CSP) to prevent malicious code execution</li>
-                <li>Minimal permissions required for functionality</li>
-                <li>No external script loading or third-party integrations</li>
-                <li>Regular security audits and updates</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>👤 User Rights</h2>
-            <p>Since we don't collect personal data, traditional data rights don't apply. However:</p>
-            <ul>
-                <li><strong>Transparency:</strong> This policy clearly explains our practices</li>
-                <li><strong>Control:</strong> You can uninstall the extension at any time</li>
-                <li><strong>No Tracking:</strong> We can't identify or track individual users</li>
-                <li><strong>Local Data:</strong> All extension data is under your control in your browser</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>🔄 Updates to This Policy</h2>
-            <p>
-                We may update this privacy policy to reflect changes in our practices or for legal reasons.
-                Any updates will be posted on this page with a new "Last Updated" date. Continued use of
-                SubExtractor after policy updates constitutes acceptance of the revised policy.
-            </p>
-        </div>
-
-        <div class="contact-info">
-            <h2>📞 Contact Us</h2>
-            <p>
-                If you have questions about this privacy policy or SubExtractor's practices,
-                please contact us through our website.
-            </p>
-            <a href="https://tapshift.dev" target="_blank" rel="noopener noreferrer" class="contact-link">
-                Visit TapShiftDev
-            </a>
-        </div>
-
-        <footer>
-            <p>&copy; 2024 TapShiftDev. All rights reserved.</p>
-            <div class="company-logo">
-                <span>Created by TapShiftDev</span>
-            </div>
-        </footer>
-    </div>
+    <footer>
+      <div>&copy; 2025 TapShiftDev. All rights reserved.</div>
+      <div class="credit"><span>Created by</span><strong>TapShiftDev</strong></div>
+    </footer>
+  </div>
 </body>
 </html>
